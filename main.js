@@ -54,15 +54,78 @@ for(var i=0;i<allUsers.length;i++){
 function sum(a,b,fnToCall){
     let result = a+b;
     fnToCall(result);
-    
-  }
-  function displayResult(data){
+
+}
+function displayResult(data){
     console.log("Result of the sum is: " + data);
-  }
-  function displayResultPassive(data){
+}
+function displayResultPassive(data){
     console.log("Sum's Result is: " + data);
-  }
-  
-  console.log(sum(3,4,displayResult));
-  console.log(sum(3,4,displayResultPassive));
-  
+}
+
+// console.log(sum(3,4,displayResult));
+// console.log(sum(3,4,displayResultPassive));
+
+// var now = new Date();
+// var t1 = now.getSeconds();
+// setTimeout(greet,3000);
+
+// // SetTimeOut
+// function greet(){
+//     var t2 = new Date().getSeconds();
+//     console.log("Hiiii");
+//     console.log(t2-t1);
+// }
+// var now = new Date();
+// var t1 = now.getTime();
+
+// setTimeout(function() {
+//     var t2 = new Date().getTime();
+//     console.log(t2 - t1);
+// }, 3000);
+
+// SetInterval
+// function time(){
+//     const now = new Date();
+//     const hr = now.getHours();
+//     const min = now.getMinutes();
+//     const sec = now.getSeconds();
+//     console.log(hr + ":" + min + ":" + sec);
+// }
+// setInterval(time,1000);
+
+// 
+function displayClock() {
+    // Get current time
+    var now = new Date();
+    
+    // Extract hours, minutes, and seconds
+    var hours = now.getHours();
+    var minutes = now.getMinutes();
+    var seconds = now.getSeconds();
+    
+    // Format the time to ensure double digits
+    var formattedHours = String(hours).padStart(2, '0');
+    var formattedMinutes = String(minutes).padStart(2, '0');
+    var formattedSeconds = String(seconds).padStart(2, '0');
+    
+    // Display the clock in the terminal
+    console.log(formattedHours + ":" + formattedMinutes + ":" + formattedSeconds);
+}
+
+// Display the clock every second
+setInterval(displayClock, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
