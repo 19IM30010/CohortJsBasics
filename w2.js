@@ -2,6 +2,7 @@ function getLength(str){
     console.log("Original String",str);
     console.log("Length:",str.length);
 }
+// String
 getLength("Hello World");
 const str = "Hello World World World";
 let name= "Gyanendra Behura Behura"
@@ -26,6 +27,7 @@ console.log(parseInt("3.14"));
 console.log(parseFloat("42"));
 console.log(parseFloat("42px"));
 console.log(parseFloat("3.14"));
+// Arrays functions
 const initialArray = [1,2,3];
 initialArray.push(4);
 initialArray.push(5);
@@ -42,6 +44,7 @@ function log(str){
 }
 
 firstArray.forEach(log); //callBack function
+// Classses
 class Animal {
     constructor(name,legCount, speaks){
         this.name = name;
@@ -77,7 +80,7 @@ const user2 = JSON.stringify(user);
 console.log(user2);
 
 
-// Date Class
+// Date Time
 const currentDate = new Date();
 console.log(currentDate.getDate());
 console.log(currentDate.getMonth() + 1);
